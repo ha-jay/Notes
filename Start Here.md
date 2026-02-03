@@ -2,6 +2,25 @@
 
 https://github.com/ha-jay/Notes.git
 
+```bash
+# git 
+git init
+git add .
+git commit "first commit"
+git branch -m main
+git add remote origin https://github.com/ha-jay/Notes.git
+git push -u origin main
+
+#git clone
+git clone https://github.com/ha-jay/Notes.git
+git add .
+git commit
+git push -u origin main
+
+#git 최신코드가져오기
+git pull origin main
+```
+
 # DEV Environment
 
 - 내프로그램이 왜 느려지는지, 왜 갑자기 종료되는지를 이해하려면 OS의 작동원리를 아는 것이 필수적입니다. -> [[Operating System]]
