@@ -1,3 +1,7 @@
+# Note GIT address
+
+https://github.com/ha-jay/Notes.git
+
 # DEV Environment
 
 - 내프로그램이 왜 느려지는지, 왜 갑자기 종료되는지를 이해하려면 OS의 작동원리를 아는 것이 필수적입니다. -> [[Operating System]]
