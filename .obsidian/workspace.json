@@ -84,12 +84,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DEV ENvironment/DEV ENvironment.md",
+                "file": "DEV ENvironment/Bash scripting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DEV ENvironment"
+              "title": "Bash scripting"
             }
           }
         ],
@@ -106,13 +106,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DEV ENvironment/DEV ENvironment.md",
+                "file": "DEV ENvironment/Bash scripting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of DEV ENvironment"
+              "title": "Outline of Bash scripting"
             }
           }
         ]
@@ -188,7 +188,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DEV ENvironment/DEV ENvironment.md",
+                "file": "DEV ENvironment/Bash scripting.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -216,7 +216,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of DEV ENvironment"
+              "title": "Graph of Bash scripting"
             }
           },
           {
@@ -295,12 +295,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DEV ENvironment/DEV ENvironment.md",
+                "file": "DEV ENvironment/Bash scripting.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from DEV ENvironment"
+              "title": "Outgoing links from Bash scripting"
             }
           }
         ],
@@ -323,7 +323,9 @@
   },
   "active": "2f30c78a35fa16e1",
   "lastOpenFiles": [
+    "DEV ENvironment/DEV ENvironment.md",
     "DEV ENvironment/Terminal Usage-Linux Bash.md",
+    "DEV ENvironment/Bash scripting.md",
     "images/Pasted image 20260203175920.png",
     "images/Pasted image 20260203175757.png",
     "images/Pasted image 20260203175554.png",
@@ -334,8 +336,6 @@
     "images/Pasted image 20260203173221.png",
     "images/Pasted image 20260203173004.png",
     "images/Pasted image 20260203163227.png",
-    "DEV ENvironment/DEV ENvironment.md",
-    "DEV ENvironment/Bash scripting.md",
     "DEV ENvironment/WSL - windows subsystem linux.md",
     "Start Here.md",
     "images",

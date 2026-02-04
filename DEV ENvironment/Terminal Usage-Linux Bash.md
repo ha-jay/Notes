@@ -421,6 +421,34 @@ codeally@2bfbc0509511:~/project/freeCodeCamp$ more package.json
 	- `cat -b` : 빈 줄을 제외하고 내용이 있는 줄에만 번호를 매기고 싶다면
 	- `cat -A` : 눈에 보이지 않는 탭(Tab) 문자나 줄바꿈 문자($)를 시각적으로 확인하고 싶을 때 씁니다.줄 끝에 $표시를 붙여주는 등 보이지 않는 제어 문자를 보여줍니다. 윈도우와 리눅스 사이에서 파일 형식이 꼬였을 때 원인을 찾기 좋습니다.
 
+###  head  and tail - 앞부분이나 뒷부분만 골라서 본다.
+- head : 파일 앞부분 10줄정도만 보여줌
+	- `head -n 5 filename` 줄수지정
+- tail : 파일 뒷부분 10줄정도만 보여줌
+	- `tail -n 5 filename` 줄수지정
+	- `tail -f filename` 파일에 새로운 내용이 추가될때마다 터미널에 즉시 출력됩니다. 서버에 누가접속했는지, 오류가 났는지 실시간 모니터링할때 씁니다. `컨트롤+c` 로 빠져나옵니다. 
+
+
+
+
+
+
+## 파일 생성, 내용 쓰기 및 파일 합치기
+### touch - 파일생성
+해당 명령어는 최종수정시간을 현재시간으로 업데이트하는 명령어입니다. 
+- 대상이 존재하지않으면 새파일을 만듭니다.
+- 대상이 있다면 내용은 그대로고 수정시간만 현재시간으로 업데이트 합니다. 
+
+`touch newfile`
+### cat - 파일생성 및 내용쓰기 / 파일합치기 / 파일에 내용추가하기
+cat은 원래 파일내용을 보여주는 용도이지만, >를 사용하면 파일을 생성할 수 있습니다.  
+
+- 파일 합치기 :  `cat file1 file2 > newfile`
+- 파일 생성 및 내용쓰기 : `cat > newfile` 원하는 내용타이핑, CTLR+D 저장 및 종료 / 만약 존재하는 파일이면 내용을 다지우고 덮어쓴다. 
+- 파일 내용 추가하기 :  `cat file1 >> file2` file1 의 내용을 file2의 끝에 추가
+
+
+
 
 # 데이터처리
 
@@ -494,4 +522,134 @@ The milk was spilled on the floor.
 - **주요 옵션:**
     - `uniq -c`: 중복된 횟수가 몇 번인지 앞에 숫자를 붙여줌
 - **주의:** `uniq`는 바로 옆에 붙어있는 줄끼리만 비교하므로, 전체 중복을 없애려면 반드시 먼저 `sort`를 해줘야 합니다.
+
+# 텍스트처리
+
+##  sed - 터미널에서 줄단위의 텍스트처리
+sed는 텍스트를 한줄씩 읽어들여서 수정, 삭제, 치환 등의 작업을 하는 명령어입니다. 
+
+`sed [option] '명령어' 파일명`
+- -i : 원본파일을 수정합니다. 
+- -n : 기본출력을 억제하고 특정명령에 해당하는 라인만 보여줍니다. 
+
+주의사항
+
+- **테스트 필수:** `i` 옵션을 쓰면 파일이 즉시 바뀌므로, 먼저 옵션 없이 실행하여 결과를 화면으로 확인한 뒤에 `i`를 붙이는 습관을 들이는 것이 좋습니다.
+- **구분자 변경:** 만약 경로명(`/home/user`)을 바꾼다면 `/` 대신 다른 기호를 써서 가독성을 높일 수 있습니다.
+    - 예: `sed 's|/usr/bin|/usr/local/bin|g' script.sh` (구분자로 `|` 사용)
+
+
+
+문자열 치환 : `s/찾을문자/바꿀문자/g`  s는 string을 의미, g는 global을 의미하고 한줄에 여러개가 있어도 모두 바꾸라는 뜻입니다. g가없으면 첫번째 것만 바꿉니다.
+- `sed 's/apple/banana/g' filename` 파일의 apple을 banana로 변경
+
+특정라인 삭제 `d`
+- `sed '3d' filename` 3번째줄 삭제
+- `sed '/error/d' filename` error 단어가 포함된 모든줄 삭제
+
+특정라인 출력 `p`
+- `sed -n '5,10p filename` 5줄에서 10번째 줄까지 출력
+
+특정라인다음에 추가 `a, i` append 뒤에추가  insert  앞에추가
+- `sed '/servername/a \ server alias example.com' filename` servername이 포함된 줄 뒤에 append 
+
+### sed는 정규표현식을 지원
+- `sed '/^$/d' filename`  빈줄삭제
+- `sed -i 's/^/#/'` 줄의 맨앞 ^를 # 으로바꿔 주석처리
+- `sed -i 's/\.log/.txt' 파일네임` .log인 텍스트를 .txt로 변경
+
+## awk - 칼럼이나 필드단위 텍스트처리 - 스페이스나 공백단위로 데이터를 구분
+awk는 각 줄을 **필드(Field)**라는 단위로 쪼개서 인식합니다. 기본적으로 **공백(스페이스, 탭)**을 기준으로 데이터를 나눕니다.
+
+- **`$0`**: 줄 전체
+- **`$1`**: 첫 번째 열
+- **`$2`**: 두 번째 열
+- **`$N`**: N 번째 열
+- **`NF`**: 현재 줄의 전체 필드 개수 (Number of Fields)
+- **`NR`**: 현재 처리 중인 줄 번호 (Number of Records)
+
+`awk '패턴 { 동작 }' 파일명`
+
+- **패턴**: 어떤 줄을 대상으로 할지 결정 (정규표현식, 숫자 비교 등)
+- **동작**: 조건이 맞을 때 무엇을 할지 (주로 `print`)
+- 옵션
+	- -F 옵션은 구분자를 지정합니다. /etc/passwd 파일은 :로 구분되어 있어 -F ":"를 씁니다.
+- 동작옵션
+	- {동작} END { 동작 } - 모든줄을 다 읽은후에 마지막에실행
+	- {동작} BEGIN {동작 } - 처리를 시작하기전에 실행
+특정열만 뽑아내기
+- 파일의 1번째와 3번째 열만 출력 `awk '{print $1, $3}' data.txt` 
+- 시스템의 사용자 이름($1)만 가져오기 `cat /etc/passwd | awk -F ":" '{print $1}'`
+
+조건에 맞는 줄만 출력
+- 3번째 열의 값이 500 이상인 줄의 1번째 열 출력 `awk '$3 >= 500 {print $1}' list.txt`
+- 'Error'라는 단어가 포함된 줄의 내용과 줄 번호 출력 `awk '/Error/ {print NR, $0}' log.txt`
+
+산술 계산 - 합계 평균
+- `awk '{sum += $2} END {print "Total Sum: ", sum}' data.txt` 2번째 열의 숫자들을 모두 더해서 출력
+
+## 응용문제 - 현재 메모리사용량 확인
+터미널에서 free 명령어를 치면 표가나옵니다. 여기서 실제 여유메모리 값만 뽑아내려면?
+
+`free | grep Mem | awk '{print "여유메모리 : " $4 /1024 " MB"}'`
+1. `free`: 메모리 정보 출력
+2. `grep Mem`: 메모리 수치가 적힌 줄만 선택
+3. `awk`: 4번째 열(free)을 가져와서 1024로 나누어 MB 단위로 출력
+
+
+
+# 파일 정보 출력 WC
+
+wc 파일에 대한 정보 출력 
+- options 
+	- 몇줄(-l), 몇단어(-w), bytes(-b), 몇문자(-m)
+
+wc 명령어 
+- 몇줄인가?
+- 단어가 몇개인가?
+- 얼마나 많은 bytes가 있는가?
+### wc <파일명> -l 라인수출력
+
+```bash
+codeally@5d79d93723c9:~/project$ wc kitty_ipsum_1.txt -l
+27 kitty_ipsum_1.txt
+```
+
+### wc <파일명> -w 단어수 출력
+
+```bash
+codeally@5d79d93723c9:~/project$ wc kitty_ipsum_1.txt -w
+332 kitty_ipsum_1.txt
+```
+
+### wc <파일명> -m character 숫자 출력
+
+```bash
+codeally@5d79d93723c9:~/project$ wc -m kitty_ipsum_1.txt 
+1738 kitty_ipsum_1.txt
+```
+
+bytes 카운트와 characters 카운트가 다르다.
+몇몇 characters들은 1byte이상임에 틀림이없다
+
+### 파일명 출력시키지 않으려면? cat과 wc piping
+
+cat 명령어를 사용한후에 그 파일의 내용들을 pipe해서 wc command의 input으로 사용
+
+```bash
+codeally@5d79d93723c9:~/project$ cat kitty_ipsum_1.txt | wc
+     27     332    1744
+```
+
+명령에 input을 제공하는방식이 출력에 영향을 미치는것 처럼 보입니다.
+
+아래명령의 결과와 약간 다릅니다.
+
+```bash
+#wc kitty_ipsum_1.txt
+codeally@5d79d93723c9:~/project$ wc kitty_ipsum_1.txt
+  27  332 1744 kitty_ipsum_1.txt
+```
+
+첫번째 명령의 결과는 숫자만 출력하고, 파일명은 출력하지 않습니다.
 
