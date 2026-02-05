@@ -62,6 +62,8 @@ https://devhints.io/bash - bash commands cheat sheet
     > 결과: "Hello Kitty" 아래에 "Meow Meow"가 한 줄 추가됩니다.
 
 
+
+
 ### `< / <<` - 입력 리다이렉션
 
 쉽게 말해 **"키보드로 칠 내용을 파일이나 텍스트 덩어리로 대신 넣어줄게!"** 라고 보시면 됩니다.
@@ -81,7 +83,7 @@ https://devhints.io/bash - bash commands cheat sheet
     > **차이점:** `wc -l practice.txt`라고 치면 파일 이름도 같이 출력되지만, `<`를 쓰면 순수하게 **숫자(줄 수)**만 나옵니다. (파일 내용을 입력값으로만 처리했기 때문입니다.)
     
 
- 2. `<<` (Here Document)
+ 2. `<<` (Here Document)  - EOF
 
 이건 좀 특이한데, **"지정한 글자가 나올 때까지 내가 지금 치는 모든 것을 입력으로 넣어라"** 라는 뜻입니다. 보통 스크립트 안에서 여러 줄의 텍스트를 한꺼번에 파일로 만들거나 전달할 때 사용합니다.
 
@@ -100,6 +102,11 @@ https://devhints.io/bash - bash commands cheat sheet
     
 
 ---
+
+
+
+
+
 
 ### | - piping
 앞 명령어의 **출력(결과)**을 뒤 명령어의 **입력**으로 바로 넘겨줄 때 사용합니다. 여러 명령어를 한 줄로 엮어서 강력한 기능을 수행하게 합니다.

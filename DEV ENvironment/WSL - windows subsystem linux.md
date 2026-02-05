@@ -4,7 +4,9 @@
 wsl --install
 ```
 
-# **Linux 사용자 이름 및 암호 설정**
+![[Pasted image 20260205070214.png]]
+
+# **Linux 사용자 름 및 암호 설정**
 
 설치중에 사용자 이름과 암호를 입력해야합니다. 
 **사용자 이름** 및 **암호**는 설치하는 각각의 개별 Linux 배포에만 적용되며, Windows 사용자 이름과는 관련이 없습니다.
@@ -56,7 +58,7 @@ wsl --set-default ubuntu
 
 우리는 주로 VS Code에서 작업을 할 테니, 이 방법이 가장 중요합니다.
 
-1. 윈도우에서 **VS Code**를 실행합니다.
+1. 윈도우에서 **VS Code**를 실행합니다. / WSL EXTENSION 설치
 2. 키보드에서 **`F1`** 키를 누릅니다 (명령 팔레트).
 3. *`WSL: Connect to WSL using Distro...`*를 검색해서 선택합니다.
 4. 목록에 뜨는 배포판 중 **`Ubuntu`*를 클릭합니다.
