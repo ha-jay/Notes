@@ -17,7 +17,7 @@
 Click HERE - WSL 개발환경 설정하기 [[WSL - windows subsystem linux]]
 
 
-# Terminal & SCRIPTING
+# Terminal & SCRIPTING & CLI Editor
 
 터미널이란 GLI 인터페이스를 이용하여 다음의 다양한 역활을 수행합니다. 
 - **운영체제와의 소통**: `ls` (파일 목록 보기), `cd` (디렉터리 이동)와 같은 기본적인 운영체제 명령어를 실행하여 파일 시스템을 관리합니다.
@@ -32,8 +32,14 @@ Click HERE - WSL 개발환경 설정하기 [[WSL - windows subsystem linux]]
 그래서 우분투 터미널(Bash/Zsh)을 익히는 것은 개발자의 **'공통 언어'**를 배우는 것과 같습니다.
 
 Click here - 터미널 사용법 [[Terminal Usage-Linux Bash]]
-
 Click here - bash scripting [[Bash scripting]]
+Click here - [[NANO Editor]]
+Click here - [[vim editor]]
+
+
 
 # IDE
+
+
+# 언어설치
 

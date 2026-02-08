@@ -104,10 +104,6 @@ https://devhints.io/bash - bash commands cheat sheet
 ---
 
 
-
-
-
-
 ### | - piping
 앞 명령어의 **출력(결과)**을 뒤 명령어의 **입력**으로 바로 넘겨줄 때 사용합니다. 여러 명령어를 한 줄로 엮어서 강력한 기능을 수행하게 합니다.
 
@@ -120,6 +116,7 @@ https://devhints.io/bash - bash commands cheat sheet
     2. `grep`이 그 내용을 받아서 "kitty"가 있는 줄만 골라내고 **다시 파이프로 보냄.**
         
     3. `wc -l`이 최종적으로 넘어온 줄의 개수만 세어서 **화면에 출력.**
+
 
 
 # 도움말 help, man, whatis
@@ -183,6 +180,21 @@ Options (주요 옵션)
 아래그림에서는 권한 / 링크수 / 소유자 / 그룹  순서대로 정보가 나열됩니다. 
 - 폴더는 파란색, 파일은 회색, 실행파일은 초록색입니다. 
 ![[Pasted image 20260203163227.png]]
+```
+goose@MyCom:~/project/my-groupware$ ls -al
+total 44
+drwxr-xr-x 5 goose goose  4096 Jan  1 06:29 .
+drwxr-xr-x 4 goose goose  4096 Jan  4 10:21 ..
+-rw-r--r-- 1 goose goose    71 Dec 30 14:36 .env
+-rw-r--r-- 1 goose goose 11134 Dec 30 16:11 .erd
+-rw-r--r-- 1 goose goose     0 Dec 30 20:30 EOF
+-rw-r--r-- 1 goose goose   358 Dec 30 17:03 docker-compose.yaml
+drwxr-xr-x 8   999 root   4096 Jan  1 06:28 mysql_data
+drwxr-xr-x 3 goose goose  4096 Dec 31 12:56 react
+-rwxr-xr-x 1 goose goose  2904 Dec 30 20:38 setup_data.sh
+drwxr-xr-x 7 goose goose  4096 Jan  4 18:59 spring_boot
+```
+
 리눅스는 여러 명이 한 컴퓨터에 접속해서 사용하는 **'다중 사용자 시스템'** 을 기반으로 설계되었습니다. 그래서 "누가 이 파일을 만들었나?"와 "이 파일을 같이 볼 수 있는 사람들은 누구인가?"를 명확히 구분하는 것이 매우 중요합니다.
 
 권한은 총 10자리로 표시된다.
@@ -659,4 +671,195 @@ codeally@5d79d93723c9:~/project$ wc kitty_ipsum_1.txt
 ```
 
 첫번째 명령의 결과는 숫자만 출력하고, 파일명은 출력하지 않습니다.
+
+# 파일 시스템
+
+## 경로이동
+
+### cd
+
+해당 경로로 이동
+
+```bash
+codeally@2bfbc0509511:~/project$ cd freeCodeCamp
+codeally@2bfbc0509511:~/project/freeCodeCamp$
+
+```
+
+- `cd ..` 한단계 뒤 경로로 이동
+```
+codeally@2bfbc0509511:~/project/freeCodeCamp/test$ cd ..
+codeally@2bfbc0509511:~/project/freeCodeCamp$
+```
+
+## 조회
+
+### pwd
+터미널은 마우스 커서가 없기 때문에, 내가 지금 어느 폴더(디렉토리)에 들어와 있는지 아는 것이 가장 중요합니다.
+
+- **명령어:** `pwd`를 입력하고 엔터를 누르세요.
+- **결과 예시:** `/home/유저아이디`
+- **의미:** 리눅스에서 `/`는 가장 뿌리가 되는 '루트' 폴더를 의미합니다. `/home/유저아이디`는 윈도우의 `C:\\Users\\유저명`과 비슷한 **'홈 디렉토리'**입니다.
+- pwd는 absolute path를 print한다.
+
+```
+goose@MyCom:~/projects$ pwd
+/home/goose/projects
+```
+
+### ls
+
+
+현재 내가 있는 폴더에 어떤 파일이나 폴더가 있는지 목록을 보여줍니다.
+
+- **명령어:** `ls`
+- 폴더는 파란색 / 이미지는 핑크색 / 파일은 흰색에 확장자포함
+```
+goose@MyCom:~$ ls
+projects
+```
+
+
+**옵션 활용 (꿀팁):**
+
+- `ls -l`: 파일의 상세 정보(권한, 크기, 만든 날짜 등)를 세로로 길게 보여줍니다. 
+	- long list format의 약자
+    - 권한정보, 소유자, 그룹 -등
+
+```
+goose@MyCom:~$ ls -l
+total 4
+drwxr-xr-x 2 goose goose 4096 Feb  7 17:02 projects
+```
+
+- `ls -a` : 숨겨진 파일(파일명이 `.` 으로 시작하는 파일)까지 모두 보여줍니다.
+```
+codeally@2bfbc0509511:~/project/website$ ls -a 
+. .. .gitignore index.html index.js styles.css
+```
+
+- `ls -al`  가장 많이 쓰는 명령어입니다.
+
+- ls -h (human readable format)
+- ls -lah (용량을 좀더 읽기 쉽게 표현해준다)
+
+### find - 파일트리를 보고싶을때 사용 - 현재폴더, 하위폴더 에 포함된 모든 파일확인 / 특정파일,폴기
+
+`./` 은 현재 폴더를 의미함
+
+```
+codeally@2bfbc0509511:~/project/website$ find
+.
+./styles.css
+./index.js
+./freeCodeCamp.svg
+./CodeRoad.svg
+./CodeAlly.svg
+./fonts
+./fonts/roboto.woff
+./lato.ttf
+./menlo.otf
+./images
+./images/footer.jpeg
+./images/background.jpg
+./images/header.png
+./.gitignore
+./index.html
+```
+
+
+`find <folder name>`
+
+특정 폴더의 파일트리
+
+```
+codeally@2bfbc0509511:~/project/website$ find client
+client
+client/src
+client/src/styles.css
+client/src/index.js
+client/src/index.html
+```
+
+
+`find -name <filename>`
+특정 파일위치 찾기
+```
+codeally@2bfbc0509511:~/project/website$ find -name index.html
+./client/src/index.html
+```
+
+`find -name <foldername>` 
+
+특정 폴더 위치찾기
+
+```
+codeally@2bfbc0509511:~/project/website$ find -name src 
+./client/src
+```
+
+
+## 폴더관련
+
+### mkdir [foldername]
+
+`mkdir [foldername]` 현재 폴더에 폴더생성
+
+```
+codeally@2bfbc0509511:~/project$ mkdir website
+```
+
+
+### rmdir <폴더이름>
+
+remove directory
+
+`rmdir <폴더>` 폴더삭제
+
+- 폴더안에 내용물이 있으면 삭제되지않는다.
+
+
+### rm -r <폴더이름>
+
+`rm -r <폴더이름>`
+
+remove directories and their contents recursively
+
+내부 폴더 및 파일들을 모두삭제
+
+- 주의! 삭제된 파일은 trash can으로 가지않고 영구삭제됨
+
+### cp -r <폴더이름> <새폴더이름>
+
+하위 폴더 및 파일 전부 복사
+
+### mv foldername new_foldername
+
+폴더이름 변경
+
+
+## 파일관련
+
+### touch filename
+
+파일생성
+
+- cat과 touch차이점
+
+쉽게 비유하자면 **`touch`는 빈 봉투를 만드는 것**이고, **`cat`은 봉투 안에 내용물을 채워 넣는 것**과 같습니다.
+
+### cp file destination
+파일 복사
+- 폴더가 없으면 폴더 생성후 복사
+
+### rm filename
+파일 삭제
+
+### mv 기존파일명 변경파일명
+파일명 변경
+
+### mv 파일명 폴더명
+파일 이동
+
+
 
