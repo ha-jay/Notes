@@ -19,6 +19,19 @@ git push -u origin main
 
 #git 최신코드가져오기
 git pull origin main
+
+#pull할때 저장소의 변경사항과 깃허브의 변경사항이 충돌시 
+#1. 그냥 무시하고 깃허브 내용으로 적용
+git fetch --all 
+git reset --hard origin/main
+
+#2. 내코드는 잠시 stash해놓고, 일단 서버내용을 받기 
+git stash          # 내 수정사항을 임시 저장소에 보관
+git pull           # 서버 내용 내려받기
+git stash pop      # 보관했던 내 수정사항을 다시 꺼내오기 (이때 다시 충돌이 날 수 있음)
+
+#3. 충돌해결하기
+
 ```
 
 # DEV Environment
