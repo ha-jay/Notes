@@ -219,3 +219,8 @@ GitHub Actions
     - Java/Spring 면접 질문
     - 시스템 설계 면접
     - 포트폴리오 발표 연습
+
+
+# AI 활용
+
+[[AI활용]]

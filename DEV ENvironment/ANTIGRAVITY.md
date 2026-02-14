@@ -1,4 +1,10 @@
 # 소개
+
+GOOGLE DOCS
+https://codelabs.developers.google.com/getting-started-google-antigravity?hl=ko#0
+
+
+
 구글이 **제미나이 3 프로(Gemini 3 Pro)** 를 중심으로 구축한 **차세대 AI 에이전트 기반 통합 개발 환경(IDE)** 입니다. 
 비주얼 스튜디오 코드(VS Code)의 포크(Fork)로 구축되었으며, 개발자가 복잡한 코딩 작업을 자율 AI 에이전트에게 위임할 수 있도록 설계되었습니다. 
 
