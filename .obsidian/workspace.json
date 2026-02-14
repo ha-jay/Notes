@@ -9,49 +9,20 @@
         "dimension": 76.22047244094489,
         "children": [
           {
-            "id": "ac06104f9f3e4675",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learn lang/Learn lang.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Learn lang"
-            }
-          },
-          {
             "id": "9dc35de400a17850",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DEV ENvironment/DEV ENvironment.md",
+                "file": "DEV ENvironment/빌드툴.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DEV ENvironment"
-            }
-          },
-          {
-            "id": "71e89480da3f30ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DEV ENvironment/VSCODE.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "VSCODE"
+              "title": "빌드툴"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "33b3d9ceff930743",
@@ -64,13 +35,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DEV ENvironment/VSCODE.md",
+                "file": "DEV ENvironment/빌드툴.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of VSCODE"
+              "title": "Outline of 빌드툴"
             }
           }
         ]
@@ -147,7 +118,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DEV ENvironment/VSCODE.md",
+                "file": "DEV ENvironment/빌드툴.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -175,7 +146,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of VSCODE"
+              "title": "Graph of 빌드툴"
             }
           },
           {
@@ -212,7 +183,7 @@
       {
         "id": "30a7192e5ad72c38",
         "type": "tabs",
-        "dimension": 24.509803921568626,
+        "dimension": 24.50980392156863,
         "children": [
           {
             "id": "5855776d1b20cd01",
@@ -229,7 +200,7 @@
       {
         "id": "feb47a4789a129c1",
         "type": "tabs",
-        "dimension": 26.348039215686274,
+        "dimension": 26.348039215686278,
         "children": [
           {
             "id": "2d72ce2eeeb83d40",
@@ -237,7 +208,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Start Here.md",
+                "file": "DEV ENvironment/빌드툴.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +218,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Start Here"
+              "title": "Backlinks for 빌드툴"
             }
           },
           {
@@ -256,20 +227,19 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DEV ENvironment/VSCODE.md",
-                "linksCollapsed": true,
-                "unlinkedCollapsed": false
+                "file": "DEV ENvironment/DEV ENvironment.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from VSCODE"
+              "title": "Outgoing links from DEV ENvironment"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 406.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -282,18 +252,33 @@
       "graph:Open graph view": false
     }
   },
-  "active": "f53891b95ed23262",
+  "active": "9dc35de400a17850",
   "lastOpenFiles": [
-    "DEV ENvironment/VSCODE.md",
     "DEV ENvironment/DEV ENvironment.md",
     "Learn lang/Learn lang.md",
+    "Projects/통합업무관리 ERP 시스템/1. 프로젝트 기획 & 설계.md",
+    "images/~$artWork_ERP_API명세서_완전판.docx",
+    "images/SmartWork_ERP_API명세서_완전판.docx",
+    "images/SmartWork_ERP_데이터베이스스크립트가이드_v1.0.docx",
+    "images/SmartWork_ERP_Database_Scripts.zip",
+    "images/SmartWork_ERP_ERD관계및인덱스_v1.0.docx",
+    "images/SmartWork_ERP_테이블명세서_v1.0.docx",
+    "DEV ENvironment/빌드툴.md",
+    "DEV ENvironment/패키지 매니저.md",
+    "DEV ENvironment/NODEJS 환경구축.md",
+    "images/~$artWork_ERP_요구사항정의서_v1.0.docx",
+    "images/SmartWork_ERP_요구사항정의서_v1.0.docx",
+    "Projects/통합업무관리 ERP 시스템/통합업무관리 ERP 시스템.md",
+    "Projects/통합업무관리 ERP 시스템",
+    "Projects",
+    "DEV ENvironment/ANTIGRAVITY.md",
+    "Computer Science/Computer Science.md",
     "Start Here.md",
+    "DEV ENvironment/VSCODE.md",
     "Learn lang/NODEJS.md",
     "Learn lang/프로그래밍 언어에 대한 이해.md",
-    "DEV ENvironment/NODEJS 환경구축.md",
     "DEV ENvironment/Bash scripting.md",
     "DEV ENvironment/vim editor.md",
-    "Computer Science/Computer Science.md",
     "DEV ENvironment/NANO Editor.md",
     "Computer Science/Linux.md",
     "images/Pasted image 20260205124020.png",
@@ -308,27 +293,11 @@
     "images/Pasted image 20260203175226.png",
     "images/Pasted image 20260203174511.png",
     "images/Pasted image 20260203174331.png",
-    "images",
-    "Learn lang",
-    "Computer Science",
     "GIT/GIT.md",
     "IDE/IDE.md",
     "Operating System/Operating System.md",
     "Terminal & Scripting/Terminal & Scripting.md",
     "Virtualization & Container & Orchestration/Virtualization & Container & Orchestration.md",
-    "DEV ENvironment",
-    "GIT",
-    "Operating System.md",
-    "Virtualization & Container & Orchestration/Virtualization & Container & orchestration.md",
-    "Operating System/Operating SYSTEM.md",
-    "IDE",
-    "Virtualization & Container & Orchestration",
-    "Terminal & Scripting",
-    "Operating System",
-    "Untitled 1.md",
-    "lin.md",
-    "2026-02-02.md",
-    "Untitled.md",
-    "docker/Untitled.base"
+    "Operating System.md"
   ]
 }

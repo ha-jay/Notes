@@ -39,9 +39,24 @@ Click here - [[vim editor]]
 
 
 # IDE
+## GENERAL IDE
 [[VSCODE]]
+[[INTELLIJ]]
+
+## AI-BASED IDE - 바이브코딩
+
+### VS CODE 기반 AI IDE
+[[CURSOR]]
+[[ANTIGRAVITY]]
+
+
+[[COPILOT]]
 
 
 # 언어설치
 
 [[NODEJS 환경구축]]
+[[패키지 매니저]]
+[[빌드툴]]
+
+
