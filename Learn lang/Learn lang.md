@@ -2,6 +2,16 @@
 # 프로그래밍 언어의 이해
 [[프로그래밍 언어에 대한 이해]]
 
-# 언어 학습
+# 기초 언어 학습
 
+[[TYPESCRIPT]]
 [[NODEJS]]
+
+
+# WEB 개발 학습
+[[HTML]]
+[[CSS]]
+[[JAVASCRIPT]]
+
+ [[react]]
+[[react-typescript]]
