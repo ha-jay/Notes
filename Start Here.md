@@ -69,49 +69,51 @@ git stash pop      # 보관했던 내 수정사항을 다시 꺼내오기 (이�
 
 # Learn Lang
 
+## 기초언어 학습
+
 개발을 시작하기전에 기초언어를 학습하고 작은 프로젝트를 진행해보세요.
 - java
 - javascript / node.js / typescript
 - python
 
-개발언어에 대한 내용은 우측 링크를 확인하세요. --> [[Learn lang]]
 
 
-# DEV
-
-## web 개발
-
-### WEB FRAMEWORK 학습
-
+## web framework 학습
 FRONT-END 
-- [[REACT]]
-- [[NEXTJS]]
+- javascript
+- react
+- nextjs
 
 BACKEND
-- [[EXPRESSJS]]
-- [[SPRING]]
-- [[DJANGO]]
-
-STACK 
-- REACT / EXPRESSJS
-- REACT / SPRING BOOT
-- NEXT JS
-
+- expressjs
+- spring
+- django
+- 
+개발언어에 대한 내용은 우측 링크를 확인하세요. --> [[Learn lang]]
+# DEV
 
 ## design pattern
 
 
 
+## 기능개발
+
+
+
+
+
+
+
 ## architecture pattern
-
-
-
-
-
-
-- TYPESCRIPT학습
 - MICROSERVICE학습
 - **메시징 & 이벤트 기반** <RabbitMQ 또는 Kafka / Spring AMQP / Spring Kafka, 비동기 처리 패턴> - **프로젝트**: 주문-결제-배송 시스템 (이벤트 기반)
+
+
+
+
+
+
+
 
 
 # CLOUD

@@ -4,143 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "3edc5561e5168852",
-        "type": "tabs",
-        "dimension": 76.22047244094489,
-        "children": [
-          {
-            "id": "9dc35de400a17850",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI활용/AI활용.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AI활용"
-            }
-          },
-          {
-            "id": "e8f241aaa88bb6d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learn lang/Learn lang.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Learn lang"
-            }
-          },
-          {
-            "id": "548755789f6cb616",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learn lang/Learn lang.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Learn lang"
-            }
-          },
-          {
-            "id": "a17401f1c73c08b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learn lang/Learn lang.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Learn lang"
-            }
-          },
-          {
-            "id": "1e4b5ff896439db8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learn lang/Learn lang.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Learn lang"
-            }
-          },
-          {
-            "id": "7fda71caca38b16e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learn lang/Learn lang.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Learn lang"
-            }
-          },
-          {
-            "id": "8dcb9055fe189e22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learn lang/JAVASCRIPT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JAVASCRIPT"
-            }
-          },
-          {
-            "id": "db78dad948c68054",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI활용/기초부터하지말고 실행중심 학습 - 시키려면 설계를 할수있는 사람이 되어야한다 - 작게시작하여 완전한 사이클을 경험하고  계속 기능을 추가하라..md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "기초부터하지말고 실행중심 학습 - 시키려면 설계를 할수있는 사람이 되어야한다 - 작게시작하여 완전한 사이클을 경험하고  계속 기능을 추가하라."
-            }
-          },
-          {
-            "id": "5b32f15876a6d06c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI활용/3FILE SYSTEM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3FILE SYSTEM"
-            }
-          }
-        ],
-        "currentTab": 6
-      },
-      {
         "id": "33b3d9ceff930743",
         "type": "tabs",
-        "dimension": 23.77952755905512,
         "children": [
           {
             "id": "331a6171a5f1cb23",
@@ -156,8 +21,23 @@
               "icon": "lucide-list",
               "title": "Outline of JAVASCRIPT"
             }
+          },
+          {
+            "id": "8dff4b5ab07b5e97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learn lang/JAVASCRIPT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JAVASCRIPT"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -365,23 +245,25 @@
       "graph:Open graph view": false
     }
   },
-  "active": "8dcb9055fe189e22",
+  "active": "8dff4b5ab07b5e97",
   "lastOpenFiles": [
     "Learn lang/Learn lang.md",
-    "Learn lang/NODEJS.md",
-    "react-typescript.md",
-    "react.md",
+    "Start Here.md",
     "Learn lang/JAVASCRIPT.md",
+    "DEV ENvironment/DEV ENvironment.md",
+    "dev/dev.md",
+    "dev",
+    "Learn lang/react-typescript.md",
+    "Learn lang/react.md",
+    "Learn lang/NODEJS.md",
     "Learn lang/TYPESCRIPT.md",
     "Computer Science/Computer Science.md",
-    "DEV ENvironment/DEV ENvironment.md",
     "DEV ENvironment/docker.md",
     "AI활용/기초부터하지말고 실행중심 학습 - 시키려면 설계를 할수있는 사람이 되어야한다 - 작게시작하여 완전한 사이클을 경험하고  계속 기능을 추가하라..md",
     "DEV ENvironment/docker images.md",
     "AI활용/기술공부하기 학습을 병행한.md",
     "AI활용/AI활용.md",
     "AI활용/3FILE SYSTEM.md",
-    "Start Here.md",
     "AI활용/프로젝트진행하며 학습하기.md",
     "DEV ENvironment/WSL - windows subsystem linux.md",
     "바이브코딩.md",
@@ -401,8 +283,6 @@
     "DEV ENvironment/NODEJS 환경구축.md",
     "images/~$artWork_ERP_요구사항정의서_v1.0.docx",
     "images/SmartWork_ERP_요구사항정의서_v1.0.docx",
-    "Projects/통합업무관리 ERP 시스템",
-    "DEV ENvironment/VSCODE.md",
     "images/Pasted image 20260205124020.png",
     "images/Pasted image 20260205123954.png",
     "images/Pasted image 20260205070214.png",
