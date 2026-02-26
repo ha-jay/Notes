@@ -1,5 +1,4 @@
 # Note GIT address
-
 https://github.com/ha-jay/Notes.git
 
 ```bash
@@ -33,7 +32,32 @@ git stash pop      # 보관했던 내 수정사항을 다시 꺼내오기 (이�
 #3. 충돌해결하기
 
 ```
+# AI TOOLs
+코드 자동완성 tool
+- 깃허브 코파일럿
+- 커서
 
+터미널 형 / agent 형 코딩
+- claud code 
+- open ai codex cli
+
+대화형 ai
+- claud
+- gemini
+- chatgpt
+
+언제 어떤 도구를 쓸까?
+- **일상적인 코딩 중** → Copilot / Codeium (자동완성으로 타이핑 감소)
+- **기능 단위 구현·리팩토링** → Cursor / Windsurf (파일 전체 맥락 이해 필요)
+- **복잡한 멀티파일 작업, CI/CD 자동화** → Claude Code / Devin (에이전트가 직접 실행)
+- **디버깅, 설계 논의, 개념 학습** → Claude / ChatGPT (자유로운 대화)
+- **최신 라이브러리 버전 확인, 공식 문서 요약** → Perplexity (웹 검색 + 정확한 출처)
+- **팀 코드베이스 문서화** → Mintlify / Swimm
+
+
+
+
+click here -> [[AI활용]]
 # DEV Environment
 도구가 좋아야 작업이 즐겁습니다. 가장 표준적이고 강력한 도구들입니다.
 
@@ -105,6 +129,7 @@ BACKEND
 
 
 ## architecture pattern
+
 - MICROSERVICE학습
 - **메시징 & 이벤트 기반** <RabbitMQ 또는 Kafka / Spring AMQP / Spring Kafka, 비동기 처리 패턴> - **프로젝트**: 주문-결제-배송 시스템 (이벤트 기반)
 
@@ -225,4 +250,3 @@ GitHub Actions
 
 # AI 활용
 
-[[AI활용]]

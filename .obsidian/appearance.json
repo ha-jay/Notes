@@ -1,3 +1,8 @@
 {
-  "cssTheme": "Obsidian Nord"
+  "cssTheme": "Minimal",
+  "textFontFamily": "리디바탕",
+  "monospaceFontFamily": "Noto Sans KR",
+  "enabledCssSnippets": [
+    "headers"
+  ]
 }

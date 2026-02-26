@@ -1,0 +1,104 @@
+/* ============================================================
+   1. 헤더 스타일 (H1, H2, H3)
+   ============================================================ */
+
+/* # (H1): 글자 크기 확대 + 글자만 파스텔 배경 */
+.cm-header-1, 
+.markdown-source-view.mod-cm6 .cm-header-1,
+.markdown-rendered h1 {
+    font-size: 1.9em !important;
+    background-color: #dbfaee !important; 
+    color: #444 !important;
+    padding: 12px 12px !important;
+    border-radius: 8px !important;
+    display: inline-block !important;
+    line-height: 1.5 !important;
+    margin-top: 1.5em !important;
+    margin-bottom: 1.5em !important;
+}
+
+/* ## (H2): 줄 전체 파스텔 배경 + 왼쪽 포인트 바 */
+.HyperMD-header-2, 
+.markdown-source-view.mod-cm6 .cm-header-2,
+.markdown-rendered h2 {
+    font-size: 1.2em !important; /* 가독성을 위해 H3보다는 크게 조정 */
+    background-color: #e3f2fd !important;
+    color: #333 !important;
+    /* display: block !important; */
+    /* width: 100% !important; */
+    padding: 5px 13px !important;
+    border-left: 5px solid #90caf9 !important;
+    margin-top: 2em !important;
+    margin-bottom: 2em !important;
+    border-radius: 0 4px 4px 0 !important;
+}
+
+/* ### (H3): 글자 크기 확대 + 글자 밑에만 밑줄 */
+
+.markdown-source-view.mod-cm6 .cm-header-3,
+.markdown-rendered h3 {
+    font-size: 1.2em !important;
+    /* display: block !important; */
+    border-bottom: 3px solid #faeae5 !important;
+    padding-bottom: 2px !important;
+    margin-top: 1.2em !important;
+    margin-bottom: 0.6em !important;
+    color: #444 !important;
+}
+
+/* 보기 모드에서 H3가 줄바꿈되도록 처리 */
+.markdown-rendered h3 {
+    display: table !important;
+}
+
+/* ============================================================
+   2. 링크 및 일반 텍스트 스타일
+   ============================================================ */
+
+/* 링크 스타일 */
+.cm-link, 
+.cm-hmd-internal-link, 
+.markdown-rendered a, 
+.markdown-rendered .internal-link {
+    font-family: "Pretendard", "NanumSquare", sans-serif !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    color: #5c7cfa !important;
+    transition: all 0.2s ease;
+}
+
+.markdown-rendered a:hover, 
+.markdown-rendered .internal-link:hover {
+    color: #3b5bdb !important;
+    text-decoration: underline !important;
+    background-color: #edf2ff !important;
+    border-radius: 4px !important;
+}
+
+/* 본문 줄 간격 및 자간 */
+.markdown-source-view.mod-cm6 .cm-content, 
+.markdown-source-view.mod-cm6 .cm-line,
+.markdown-rendered {
+    line-height: 1.8 !important;   /* 1.3은 너무 좁아 보여 1.8로 조정했습니다 */
+    letter-spacing: 0.02em !important;
+}
+
+/* ============================================================
+   3. 인용구 (Blockquote) 스타일
+   ============================================================ */
+
+.markdown-source-view.mod-cm6 .cm-blockquote,
+.markdown-rendered blockquote {
+    background-color: #f8f9fa !important;
+    border-left: 4px solid #dee2e6 !important;
+    color: #555 !important;
+    padding: 10px 20px !important;
+    margin: 1.5em 0 !important;
+    border-radius: 0 8px 8px 0 !important;
+    font-style: italic !important;
+    line-height: 1.8 !important;
+}
+
+.markdown-rendered blockquote p {
+    margin: 0 !important;
+}

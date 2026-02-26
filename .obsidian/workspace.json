@@ -4,26 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "33b3d9ceff930743",
+        "id": "d046507fe9f77323",
         "type": "tabs",
+        "dimension": 64.59293394777265,
         "children": [
           {
-            "id": "331a6171a5f1cb23",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Learn lang/JAVASCRIPT.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of JAVASCRIPT"
-            }
-          },
-          {
-            "id": "8dff4b5ab07b5e97",
+            "id": "7c46d990059be46d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,8 +22,29 @@
               "title": "JAVASCRIPT"
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "d9ca37b4684aa5b1",
+        "type": "tabs",
+        "dimension": 35.40706605222734,
+        "children": [
+          {
+            "id": "bae20c2a4c1d066f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Learn lang/JAVASCRIPT.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of JAVASCRIPT"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,7 +210,7 @@
               "state": {
                 "file": "Learn lang/JAVASCRIPT.md",
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -220,19 +227,18 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DEV ENvironment/DEV ENvironment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from DEV ENvironment"
+              "title": "Outgoing links"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 373.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -245,12 +251,20 @@
       "graph:Open graph view": false
     }
   },
-  "active": "8dff4b5ab07b5e97",
+  "active": "7c46d990059be46d",
   "lastOpenFiles": [
-    "Learn lang/Learn lang.md",
+    "AI활용/ai를 활용해서 개발 공부하는 방법.md",
+    "AI활용/AI활용.md",
+    "AI활용/프로젝트 수행.md",
     "Start Here.md",
     "Learn lang/JAVASCRIPT.md",
+    "DEV ENvironment/WSL - windows subsystem linux.md",
     "DEV ENvironment/DEV ENvironment.md",
+    "Projects/통합업무관리 ERP 시스템/1. 프로젝트 기획 & 설계.md",
+    "AI활용/onpremise.md",
+    "AI활용/ai활용 devops.md",
+    "AI활용/클로드를 결제했는데 커서를 결제해야하나 - 네.md",
+    "Learn lang/Learn lang.md",
     "dev/dev.md",
     "dev",
     "Learn lang/react-typescript.md",
@@ -262,25 +276,17 @@
     "AI활용/기초부터하지말고 실행중심 학습 - 시키려면 설계를 할수있는 사람이 되어야한다 - 작게시작하여 완전한 사이클을 경험하고  계속 기능을 추가하라..md",
     "DEV ENvironment/docker images.md",
     "AI활용/기술공부하기 학습을 병행한.md",
-    "AI활용/AI활용.md",
     "AI활용/3FILE SYSTEM.md",
     "AI활용/프로젝트진행하며 학습하기.md",
-    "DEV ENvironment/WSL - windows subsystem linux.md",
     "바이브코딩.md",
     "AI활용",
-    "Projects/통합업무관리 ERP 시스템/1. 프로젝트 기획 & 설계.md",
     "Projects/통합업무관리 ERP 시스템/통합업무관리 ERP 시스템.md",
-    "DEV ENvironment/ANTIGRAVITY.md",
-    "anti-gravity.md",
-    "DEV ENvironment/빌드툴.md",
     "images/~$artWork_ERP_API명세서_완전판.docx",
     "images/SmartWork_ERP_API명세서_완전판.docx",
     "images/SmartWork_ERP_데이터베이스스크립트가이드_v1.0.docx",
     "images/SmartWork_ERP_Database_Scripts.zip",
     "images/SmartWork_ERP_ERD관계및인덱스_v1.0.docx",
     "images/SmartWork_ERP_테이블명세서_v1.0.docx",
-    "DEV ENvironment/패키지 매니저.md",
-    "DEV ENvironment/NODEJS 환경구축.md",
     "images/~$artWork_ERP_요구사항정의서_v1.0.docx",
     "images/SmartWork_ERP_요구사항정의서_v1.0.docx",
     "images/Pasted image 20260205124020.png",

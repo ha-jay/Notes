@@ -1,4 +1,135 @@
+깃허브 주소
+- https://github.com/ha-jay/LearnLang_javascript
 
+# 주석
+
+우리는 너무 바보가 아니기때문에 뻔한곳에 주석을 남발하지말자.
+
+## 여러줄 주석
+- 시작부분에 summary, 저작권정보, 소유권정보
+- to do list
+
+### 시작부분 예시
+- 프로그램 헤더 (File Header)
+```js
+/**************************************************************************
+ * @Project: MyBlink (Arduino Project)
+ * @Summary: 내장 LED를 1초 간격으로 점멸 제어
+ * @Description: 
+ * - LED_BUILTIN(Uno/Mega 13번 핀)을 사용하여 무한 루프 점멸 구현
+ * * @Author: eventia@gmail.com
+ * @Created: 13 July 2020
+ * @Reference: http://www.arduino.cc/en/Tutorial/Blink
+ * @Copyright: Copyright (c) 2024 YourName. All rights reserved.
+ **************************************************************************/
+```
+- 모듈/기능 단위 주석 (Module Header)
+```
+/**************************************************************************
+ * [Module] 로그인 서비스 (Login Page)
+ * * @Functions:
+ * 1) dbConnection_check : 폼 제출 시 데이터베이스 연결 상태 확인
+ * 2) saveUserId : 사용자 ID 저장 (Registry -> .ini 파일 방식으로 변경)
+ * 3) validateAccount : 계정 유효성 및 패스워드 일치 여부 검증
+ * * @History:
+ * - 2017-06-26 : [Initial] 로그인 기능 최초 구현 (by xxx)
+ * - [Details] 기타 상세 변경 내역은 Git Log 참조
+ **************************************************************************/
+```
+- 할 일 목록 (TODO List)
+```
+/**
+ * @TODO_LIST
+ * [ ] 레지스트리 ID 저장 로직 제거
+ * [ ] INI 파일 설정 기반 ID 저장 방식으로 전환 (Priority: High)
+ */
+```
+
+## 여러분 주석, 부분주석
+
+### 함수설명 및 파라미터 설명
+```js
+/**
+ * @description 거듭제곱 계산 (x^n)
+ * @param {number} x - 거듭제곱할 밑수
+ * @param {number} n - 곱할 횟수 (지수, 반드시 자연수)
+ * @returns {number} x를 n번 곱한 결과값
+ */
+function pow(x, n) {
+    // 로직 구현
+}
+```
+
+```js
+/**
+ * 문자열 내 특정 단어 치환
+ */
+function myReplace(
+    str,    /* 원문 텍스트 (Base String) */
+    before, /* 변경 전 단어 (Target) */
+    after   /* 변경 후 단어 (Replacement) */
+) {
+    // 로직 구현
+}
+
+// 또는 한 줄로 작성 시 (공백을 활용해 정렬)
+function myReplace(str /* text */, before /* target */, after /* replacement */) {}
+```
+
+## 한줄 주석
+사람들이 당연하게 아는 내용은 생략하고, **'왜(Why)'** 이렇게 짰는지를 위주로 적습니다.
+- 좋은 예 : 의도와 배경설명
+**의도 중심**: "무엇을 하는가"보다 **"왜 이렇게 했는가"**가 더 중요한 정보입니
+
+### 설명은 간결, 동작의 원인을 포함하여 작성
+```
+// 초음파 센서 신호를 읽어 들여 현재 측정 거리를 시리얼 모니터에 출력함
+printDistance(); 
+
+// 리셋 스위치 이벤트 발생 시, 정밀한 재측정을 위해 누적 거리를 0으로 초기화함
+length = 0;
+```
+
+### 코드로직 상세설명
+사람들이 당연하게 여기는 문법 설명은 배제하고, **대소문자 유지 로직**과 같은 핵심 흐름 위주로 기록
+```
+/**
+ * 문자열 내 단어를 치환하되, 원본의 대소문자 형식을 보존함
+ */
+function myReplace(str, before, after) {
+  // 치환 대상 단어가 시작되는 위치 확인
+  var index = str.indexOf(before);
+
+  // 원본 단어의 첫 글자가 대문자인지 확인하여 문맥적 일관성 유지
+  if (str[index] === str[index].toUpperCase()) {
+    // 원본이 대문자면 치환될 단어의 첫 글자도 대문자로 변환
+    after = after.charAt(0).toUpperCase() + after.slice(1);
+  } else {
+    // 원본이 소문자면 치환될 단어의 첫 글자도 소문자로 변환
+    after = after.charAt(0).toLowerCase() + after.slice(1);
+  }
+
+  // 대소문자 처리가 완료된 단어로 최종 치환 수행
+  str = str.replace(before, after);
+
+  return str;
+}
+
+// "jumped"를 "leaped"로 치환 테스트 (소문자 형식 보존 확인)
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+```
+
+클론코딩을 하실 때 이렇게 **'동작의 이유'**를 주석으로 남겨두면, 나중에 AI에게 코드를 수정해달라고 할 때도 훨씬 정확한 답변을 얻을 수 있습니다.
+
+
+
+
+
+
+
+
+
+---
 # 변수와 데이터 타입
 - var, let, const의 차이와 스코프
 - 원시형 vs 참조형 데이터
