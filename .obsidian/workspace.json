@@ -6,7 +6,7 @@
       {
         "id": "d046507fe9f77323",
         "type": "tabs",
-        "dimension": 64.59293394777265,
+        "dimension": 41.87102633969118,
         "children": [
           {
             "id": "7c46d990059be46d",
@@ -21,13 +21,49 @@
               "icon": "lucide-file",
               "title": "JAVASCRIPT"
             }
+          },
+          {
+            "id": "dd0f9d0425ad7f60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "함수.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "함수"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "fd7014275e408423",
+        "type": "tabs",
+        "dimension": 29.06448683015441,
+        "children": [
+          {
+            "id": "f0ac1d836e4b909f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "함수.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "함수"
+            }
           }
         ]
       },
       {
         "id": "d9ca37b4684aa5b1",
         "type": "tabs",
-        "dimension": 35.40706605222734,
+        "dimension": 29.06448683015441,
         "children": [
           {
             "id": "bae20c2a4c1d066f",
@@ -35,13 +71,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learn lang/JAVASCRIPT.md",
+                "file": "함수.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of JAVASCRIPT"
+              "title": "Outline of 함수"
             }
           }
         ]
@@ -118,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Learn lang/JAVASCRIPT.md",
+                "file": "함수.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -146,7 +182,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of JAVASCRIPT"
+              "title": "Graph of 함수"
             }
           },
           {
@@ -208,7 +244,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learn lang/JAVASCRIPT.md",
+                "file": "함수.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -218,7 +254,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for JAVASCRIPT"
+              "title": "Backlinks for 함수"
             }
           },
           {
@@ -238,7 +274,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 373.5
+    "width": 308.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -251,36 +287,37 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7c46d990059be46d",
+  "active": "dd0f9d0425ad7f60",
   "lastOpenFiles": [
+    "Learn lang/JAVASCRIPT.md",
+    "함수.md",
+    "논리연산자 활용 Optional Logic 및 옵셔널체이닝.md",
+    "조건문.md",
+    "반복문.md",
+    "표현식 과 연산자.md",
+    "구조분해할당.md",
+    "Learn lang/notes/변수.md",
+    "메모리와 데이터 타입.md",
+    "Learn lang/notes/변수와 데이터 타입.md",
+    "자바스크립트 엔진의 코드실행과정.md",
+    "Learn lang/notes/strictmode.md",
+    "Learn lang/notes/identifier-naming convention.md",
+    "Learn lang/notes/주석.md",
+    "Learn lang/Learn lang.md",
+    "Learn lang/notes",
     "AI활용/ai를 활용해서 개발 공부하는 방법.md",
     "AI활용/AI활용.md",
     "AI활용/프로젝트 수행.md",
     "Start Here.md",
-    "Learn lang/JAVASCRIPT.md",
     "DEV ENvironment/WSL - windows subsystem linux.md",
     "DEV ENvironment/DEV ENvironment.md",
     "Projects/통합업무관리 ERP 시스템/1. 프로젝트 기획 & 설계.md",
     "AI활용/onpremise.md",
     "AI활용/ai활용 devops.md",
     "AI활용/클로드를 결제했는데 커서를 결제해야하나 - 네.md",
-    "Learn lang/Learn lang.md",
     "dev/dev.md",
     "dev",
-    "Learn lang/react-typescript.md",
-    "Learn lang/react.md",
-    "Learn lang/NODEJS.md",
-    "Learn lang/TYPESCRIPT.md",
-    "Computer Science/Computer Science.md",
-    "DEV ENvironment/docker.md",
-    "AI활용/기초부터하지말고 실행중심 학습 - 시키려면 설계를 할수있는 사람이 되어야한다 - 작게시작하여 완전한 사이클을 경험하고  계속 기능을 추가하라..md",
-    "DEV ENvironment/docker images.md",
-    "AI활용/기술공부하기 학습을 병행한.md",
-    "AI활용/3FILE SYSTEM.md",
-    "AI활용/프로젝트진행하며 학습하기.md",
-    "바이브코딩.md",
     "AI활용",
-    "Projects/통합업무관리 ERP 시스템/통합업무관리 ERP 시스템.md",
     "images/~$artWork_ERP_API명세서_완전판.docx",
     "images/SmartWork_ERP_API명세서_완전판.docx",
     "images/SmartWork_ERP_데이터베이스스크립트가이드_v1.0.docx",
@@ -288,7 +325,6 @@
     "images/SmartWork_ERP_ERD관계및인덱스_v1.0.docx",
     "images/SmartWork_ERP_테이블명세서_v1.0.docx",
     "images/~$artWork_ERP_요구사항정의서_v1.0.docx",
-    "images/SmartWork_ERP_요구사항정의서_v1.0.docx",
     "images/Pasted image 20260205124020.png",
     "images/Pasted image 20260205123954.png",
     "images/Pasted image 20260205070214.png",
